@@ -1,6 +1,6 @@
 # EODRec
 
-# Codes for Paper: Efficient On-Device Session-Based Recommendation 
+Codes for Paper: Efficient On-Device Session-Based Recommendation 
 This paper is under review.
 
 Datasets are available at Dropbox: https://www.dropbox.com/sh/j12um64gsig5wqk/AAD4Vov6hUGwbLoVxh3wASg_a?dl=0 The datasets are already preprocessed and encoded by pickle.
