@@ -79,8 +79,8 @@ def main():
         metrics, total_loss = train_test(model, train_data, test_data, epoch, opt, trans_to_cuda(teacher), trans_to_cuda(emb_model))
         # torch.save(model.one_hot.cpu(), '../onehot_tmall.pkl')
         if epoch == 0:
-            torch.save(trans_to_cpu(model.one_hot).detach().numpy(), '../sas_stu_tmall_onehot_5m_512k_test03.pkl')
-            torch.save(emb_model.state_dict(), '../code_model_tmall_5m_512k_test03.pkl')
+            torch.save(trans_to_cpu(model.one_hot).detach().numpy(), '../sas_stu_rr_onehot_4m_256k_test03.pkl')
+            torch.save(emb_model.state_dict(), '../code_model_rr_4m_256k_test03.pkl')
         for K in top_K:
             metrics['hit%d' % K] = np.mean(metrics['hit%d' % K]) * 100
             metrics['mrr%d' % K] = np.mean(metrics['mrr%d' % K]) * 100
